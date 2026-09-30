@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=Application
-Name=Teclas
-Name[en]=Keys
-GenericName=Remapeo de teclas
-GenericName[en]=Key remapper
-Comment=Cambia lo que hace cada tecla del teclado en BookOS
-Comment[en]=Change what each keyboard key does in BookOS
+Name=Keys
+Name[es]=Teclas
+GenericName=Key remapper
+GenericName[es]=Remapeo de teclas
+Comment=Change what each keyboard key does in BookOS
+Comment[es]=Cambia lo que hace cada tecla del teclado en BookOS
 Exec=bookos-teclas
 Icon=bookos-teclas
 Terminal=false
