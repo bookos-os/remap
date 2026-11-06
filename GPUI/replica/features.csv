@@ -1,0 +1,24 @@
+feature,area,priority,original,clone,notes
+Teclado físico ISO con Intro en L,teclado,must,yes,yes,Inspeccionado en Wayland en 1240×740 y 1080×620
+Teclado ANSI,teclado,must,yes,yes,Distribución us elegida desde el selector y capturada
+Siete distribuciones XKB y tres niveles,teclado,must,yes,yes,Tablas originales conservadas; tests de ES y US y variante es(cat)
+Editor agrupado y teclas no dibujadas,remapeos,must,yes,yes,Clics y captura evdev:240 comprobados
+Compositor BookOS por D-Bus,motor,must,yes,yes,Contrato comprobado con doble en bus privado
+Servicio de sistema por D-Bus,motor,must,yes,yes,Contrato y ventana en inglés comprobados en bus privado
+Ocultar acciones BookOS y comandos con motor de sistema,motor,must,yes,yes,Filtro por capacidades del motor conservado; inspección del editor inglés
+Aplicación y lectura de confirmación,remapeos,must,yes,yes,Regresión de rechazo y discrepancia y recuperación tras fallo de lectura
+Última petición sin escrituras paralelas,remapeos,should,no,yes,Serialización y clics consecutivos comprobados
+Comandos personalizados,remapeos,must,yes,yes,Entrada y guardado por Intro comprobados sin ejecutar comandos reales
+Eliminar con confirmación,remapeos,must,yes,yes,Confirmación por clic y por Tab Tab Intro comprobada
+Captura Copilot y F23 independiente,captura,must,yes,yes,Señales del doble con codigo 193 y ambos valores de copilot
+Cancelar y plazo de diez segundos,captura,must,yes,yes,Contrato comprobado con ambos motores; cierre desarma la captura
+Probador de pulsación y suelta,teclado,must,yes,yes,Entrada nativa despachada a la ventana GPUI; adaptación conserva evdev
+Piloto Bloq Mayús,teclado,should,yes,partial,Conectado a ModifiersChanged de GPUI; sin comprobación de LED físico
+Ayuda de teclas y Fn,teclado,should,yes,yes,Inspeccionada sobre Esc; Fn no es remapeable
+Traducciones ES y EN automáticas,idioma,must,yes,yes,Locales de proceso distintos y tests de prioridad regional; se elimina selección manual por petición
+Distribución visual persistente,preferencias,must,yes,yes,Selector us y state.json comprobados
+Paleta dinámica opcional y persistente,apariencia,must,yes,yes,Lectura de paleta real y apagado encendido en directorio de prueba
+Marco y controles de ventana BookOS,ventana,must,yes,yes,Medidas del HIG y ventana real inspeccionadas
+Gesto atrás con vista previa,navegación,should,no,yes,Tramo vertical bloqueado y tramo horizontal completado en regresión
+Errores vacíos y reintento tardío,estados,must,yes,yes,Motor ausente y aparición posterior comprobados; nunca confirma sin lectura
+Instalación RPM y Arch,empaquetado,should,yes,partial,Sintaxis de scripts spec y desktop validada; no se instaló el paquete
